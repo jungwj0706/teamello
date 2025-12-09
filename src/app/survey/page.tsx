@@ -183,7 +183,13 @@ export default function SurveyPage() {
   return (
     <div className="min-h-screen bg-[#fafafa] py-12">
       <div className="max-w-3xl mx-auto px-8">
-        {/* Progress */}
+        <button
+          onClick={() => router.back()}
+          className="mb-6 inline-flex items-center gap-2 text-gray-700 hover:text-gray-900"
+        >
+          <Icon icon="weui:back-filled" width={26} height={26} />
+          <span className="text-[15px] font-medium">뒤로</span>
+        </button>
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
             <span className="text-[14px] text-gray-600">

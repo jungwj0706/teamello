@@ -9,6 +9,8 @@ import Link from "next/link";
 import { Team, TeamMember } from "@/types/team";
 import { Survey } from "@/types/survey";
 import { TeamAnalysis } from "@/types/analysis";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 interface User {
   id: string;
@@ -98,6 +100,7 @@ export default function TeamDashboard() {
 
   return (
     <div className="min-h-screen bg-[#fafafa]">
+      <Header />
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-[1400px] mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
@@ -291,6 +294,8 @@ export default function TeamDashboard() {
           </div>
         </div>
       </div>
+      <div className="h-10"></div>
+      <Footer />
     </div>
   );
 }
