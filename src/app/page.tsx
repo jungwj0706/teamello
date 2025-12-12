@@ -54,11 +54,20 @@ export default function HomePage() {
         <h1 className="text-[64px] font-bold leading-tight mb-6">
           팀플 갈등을{" "}
           <TypeAnimation
-            sequence={["미리 예방하세요", 5000]}
+            sequence={[
+              "미리 예방하세요",
+              2000, 
+              "", 
+              500, 
+              "미리 예방하세요",
+              2000,
+              "",
+              500,
+            ]}
             wrapper="span"
-            speed={3}
+            speed={10}
             className="gradient-text"
-            repeat={0}
+            repeat={Infinity}
             cursor={false}
           />
         </h1>
@@ -299,8 +308,8 @@ export default function HomePage() {
               ))}
             </div>
             <p className="text-[15px] text-gray-700 leading-relaxed mb-6">
-              &quot;Teamello가 없었으면 팀이 완전히 흩어졌을 것 같아요. AI가
-              미리 우리의 차이점을 알려줘서 갈등이 생기기 전에 대비할 수
+              &quot;Teamello가 없었으면 저희 조가 완전히 흩어졌을 것 같아요. AI가
+              미리 저희들의 차이점을 알려줘서 갈등이 생기기 전에 대비할 수
               있었어요.&quot;
             </p>
             <div className="border-t border-gray-100 pt-4">
@@ -321,7 +330,7 @@ export default function HomePage() {
               ))}
             </div>
             <p className="text-[15px] text-gray-700 leading-relaxed mb-6">
-              &quot;리더로서 팀 관리가 정말 힘들었는데, Teamello의 데이터 기반
+              &quot;팀장으로서 팀 관리가 정말 힘들었는데, Teamello의 데이터 기반
               제안이 정말 도움됐습니다. 객관적 근거로 팀을 운영할 수 있게
               되었어요.&quot;
             </p>
@@ -343,7 +352,7 @@ export default function HomePage() {
               ))}
             </div>
             <p className="text-[15px] text-gray-700 leading-relaxed mb-6">
-              &quot;처음 팀프로젝트라서 불안했는데, Teamello의 설문과 피드백이
+              &quot;제 첫 팀프로젝트라서 불안했는데, Teamello의 설문과 피드백이
               저한테 역할을 명확하게 해줬어요. 심리적으로 훨씬 편했어요.&quot;
             </p>
             <div className="border-t border-gray-100 pt-4">
